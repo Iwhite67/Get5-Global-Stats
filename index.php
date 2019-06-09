@@ -6,7 +6,7 @@ $login = '';
 $password = '';
 
 try{
-    $bdd = new PDO('mysql:host=$url;dbname=$db;charset=utf8', $login, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $bdd = new PDO('mysql:host='.$url.';dbname='.$db.';charset=utf8', $login, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 }catch(Exception $e){
     die('Erreur : ' . $e->getMessage());
 }
