@@ -50,7 +50,7 @@ try{
             $hs = number_format($hs,0)
         ?>
                 <tr>
-                        <td data-table-header="Pseudo"><?=$name->name;?></td>
+                        <td data-table-header="Pseudo"><?=$name->name;?> (<a href="http://steamcommunity.com/profiles/<?=$stats->steam_id;?>">Steam</a>)</td>
                         <td data-table-header="Kills"><?=$stats->kills;?></td>
                         <td data-table-header="Deaths"><?=$stats->deaths;?></td>
                         <td data-table-header="Assists"><?=$stats->assists;?></td>
